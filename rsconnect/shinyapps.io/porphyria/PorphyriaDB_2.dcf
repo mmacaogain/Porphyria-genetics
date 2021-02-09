@@ -1,0 +1,12 @@
+name: PorphyriaDB_2
+title: PorphyriaDB_2
+username:
+account: porphyria
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3477069
+bundleId: 4100159
+url: https://porphyria.shinyapps.io/PorphyriaDB_2/
+when: 1610722048.52445
+asMultiple: FALSE
+asStatic: FALSE
