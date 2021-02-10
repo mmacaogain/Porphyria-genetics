@@ -6,6 +6,6 @@ Sarah Savage (Senior Clinical Biochemist)
 Vivion Crowley (Consultant Chemical Pathologist)
 http://www.stjames.ie/consultants/crowleyvivion/
 
-The database can be accessed from the shinyapps.io server at the following link
+Our database is hosted on the shinyapps.io server and can be accessed via the following link
 
 https://porphyria.shinyapps.io/PorphyriaDB_2/
