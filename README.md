@@ -4,5 +4,5 @@ This repository contains a  database of genetic variants asscoiated with the acu
 Authors: <br />
 Vivion Crowley - vcrowley@STJAMES.IE <br />
 Micheál Mac Aogáin - mmacaogain@STJAMES.IE <br /> <br />
-Developed by Micheál Mac Aogáin. Hosted on the shinyapps.io server and can be accessed via the following link
+Developed by Micheál Mac Aogáin. Hosted on the shinyapps.io server accessable via: <br />
 https://porphyria.shinyapps.io/PorphyriaDB_2/
