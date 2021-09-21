@@ -1,0 +1,14 @@
+name: Porphyria-genetics
+title: Porphyria-genetics
+username:
+account: porphyria
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4697066
+bundleId: 5055451
+url: https://porphyria.shinyapps.io/Porphyria-genetics/
+when: 1632221217.48102
+lastSyncTime: 1632221217.48103
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: Scores_orig_temp.csv|Scores_workup_temp.csv
