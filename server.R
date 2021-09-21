@@ -10,7 +10,7 @@ library(shiny)
 require(devtools) #added devtools to try and ensure DT:: command was followed
 
 
-PorData<-read.csv("Scores.csv", row.names = 1)
+PorData<-read.csv("scores.csv", row.names = 1)
 server <- function(input, output) {
   output$mytable = DT::renderDataTable({
     PorData
