@@ -20,4 +20,5 @@ server <- function(input, output) {
 #shinyApp(ui, server)
 
 #search box is still not working...
-#DataTables warning: table id=DataTables_Table_0 - Error in tolower(x): invalid multibyte string 100
+#DataTables warning: table id=DataTables_Table_0 - Error in tolower(x): invalid multibyte string 100 
+#
