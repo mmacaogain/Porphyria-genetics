@@ -7,5 +7,5 @@ Micheál Mac Aogáin - mmacaogain@STJAMES.IE <br /> <br />
 Developed by Micheál Mac Aogáin. Hosted on the shinyapps.io server accessable via: <br />
 https://porphyria.shinyapps.io/PorphyriaDB_2/
 
-New site with mirrored database underdelopment here.
+New site with mirrored database under delopment here:
 https://www.porphyriadb.com/
