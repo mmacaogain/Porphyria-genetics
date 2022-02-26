@@ -10,7 +10,7 @@ library(shiny)
 require(devtools) #added devtools to try and ensure DT:: command was followed
 
 
-PorData<-read.csv("scores.csv", row.names = 1)
+PorData<-readr::read_csv("scores.csv")
 server <- function(input, output) {
   output$mytable = DT::renderDataTable({
     PorData
@@ -21,4 +21,5 @@ server <- function(input, output) {
 
 #search box is still not working...
 #DataTables warning: table id=DataTables_Table_0 - Error in tolower(x): invalid multibyte string 100 
+#Solved: https://github.com/rstudio/DT/issues/497
 #
