@@ -6,7 +6,8 @@ library(dplyr)
 # Read in the CSV file, filter rows, and drop specified columns in one block
 final_data <- read.csv("gnomad_variant_interpretation/Scores_ANNOVAR_2024_MASTER.csv") %>%
   filter(Func.refGeneWithVer == "exonic") %>%
-  select(-Func.refGeneWithVer, -SJHConsScore, -in_vitro_HMBS_activity)
+  select(-Func.refGeneWithVer, -SJHConsScore, -in_vitro_HMBS_activity, -SJHConsScore, -HGVS_protein_dual
+)
 
 # View the first few rows of the final dataset
 head(final_data)
