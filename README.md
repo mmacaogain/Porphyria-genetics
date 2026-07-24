@@ -1,11 +1,26 @@
-# Porphyria-genetics
-This repository contains a  database of genetic variants associated with the acute hepatic porphyrias. Entries are curated by members of the Biochemical Genetics Laboratory at St. James's Hospital, Dublin. It represents an in-house genetic repository (under development) for the  National Centre for the Investigation and Diagnosis of Porphyria.
+# PorphyriaDB
 
-Authors: <br />
-Vivion Crowley - vcrowley@STJAMES.IE <br />
-Micheál Mac Aogáin - mmacaogain@STJAMES.IE <br /> <br />
-Developed by Micheál Mac Aogáin. Hosted on the shinyapps.io server accessable via: <br />
-https://porphyria.shinyapps.io/PorphyriaDB_2/
+PorphyriaDB is a searchable database of missense variants associated with
+porphyria. The Shiny application displays the curated variants in
+`Scores_FECH_UROD.csv`.
 
-New site with mirrored database under development here:
-https://www.porphyriadb.com/
+The database is curated by members of the Biochemical Genetics Laboratory at
+St. James's Hospital, Dublin, for the National Centre for the Investigation and
+Diagnosis of Porphyria.
+
+## Run locally
+
+Install the two runtime dependencies:
+
+```r
+install.packages(c("shiny", "DT"))
+```
+
+Then run the application from the repository root:
+
+```r
+shiny::runApp()
+```
+
+The deployed application is available at
+<https://porphyria.shinyapps.io/PorphyriaDB_2/>.

@@ -1,9 +1,15 @@
+library(shiny)
 library(DT)
-#library(shiny)
-#PorData<-read.csv("Scores.csv",encoding="UTF-8")
-#PorData<-readr::read_csv("scores.csv")
-PorData<-read.csv("Scores_FECH_UROD.csv", row.names = 1)
-ui<-basicPage(
-  h2("PorphyriaDB: a genetic database of missense variants associated with acute intermittent porphyrias"),
-  DT::dataTableOutput("mytable")
+
+ui <- fluidPage(
+  titlePanel("PorphyriaDB"),
+  tags$p(
+    "Browse and search missense variants associated with porphyria. ",
+    "Use the filters beneath each column heading to narrow the results."
+  ),
+  tags$div(
+    role = "region",
+    `aria-label` = "Porphyria missense variant database",
+    DT::DTOutput("mytable")
+  )
 )
