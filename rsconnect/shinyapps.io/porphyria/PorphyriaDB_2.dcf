@@ -5,8 +5,5 @@ account: porphyria
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3477069
-bundleId: 9516847
+bundleId: 12315552
 url: https://porphyria.shinyapps.io/PorphyriaDB_2/
-asMultiple: FALSE
-asStatic: FALSE
-ignoredFiles: Scores_orig_temp.csv|Scores_workup_temp.csv
