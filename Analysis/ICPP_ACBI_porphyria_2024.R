@@ -5,7 +5,7 @@ library(randomForest)
 library(caret)
 library(pROC)
 library(dplyr)
-library(tidyverse
+library(tidyverse)
 
 data<-read.csv("../Scores.csv")
 

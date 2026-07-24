@@ -1,14 +1,12 @@
 name: PorphyriaDB_2
-title: PorphyriaDB_2
+title: Porphyria-genetics
 username:
 account: porphyria
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3477069
-bundleId: 5792104
+bundleId: 9516847
 url: https://porphyria.shinyapps.io/PorphyriaDB_2/
-when: 1649805101.71649
-lastSyncTime: 1649805101.71656
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: Scores_orig_temp.csv|Scores_workup_temp.csv

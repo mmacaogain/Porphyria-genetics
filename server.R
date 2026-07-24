@@ -11,7 +11,7 @@ library(shiny)
 require(devtools) #added devtools to try and ensure DT:: command was followed
 
 #PorData<-readr::read_csv("Scores.csv", encoding="UTF-8") 
-PorData<-read.csv("Scores.csv",encoding="UTF-8")
+PorData<-read.csv("Scores_FECH_UROD.csv",encoding="UTF-8")
 server <- function(input, output) {
   output$mytable = DT::renderDataTable({
     PorData
