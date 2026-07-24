@@ -16,6 +16,7 @@ final_data <- read.csv("gnomad_variant_interpretation/Scores_ANNOVAR_2024_MASTER
   select(-Func.refGeneWithVer, -SJHConsScore, #-in_vitro_HMBS_activity, 
          -CONDEL, -SJHConsScore, -HGVS_protein_dual, -DiscovEHR
   )
+#FOR UPDATES ADD THIS "gnomad_variant_interpretation/Scores_ANNOVAR_2025_MASTER_WvL_functional_UROD_FECH.csv"
 
 # Define the thresholds for each predictor
 thresholds <- c(

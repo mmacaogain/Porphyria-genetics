@@ -51,7 +51,7 @@ duplicate_values <- concatenated_df$HGVS_protein [duplicated(concatenated_df$HGV
 print(duplicate_values) # will need to look into this in next revision
 
 #Let's rename the original Scores file
-file.rename("../../Scores.csv", "../../Scores_old_11072023.csv")
+#file.rename("../../Scores.csv", "../../Scores_old_11072023.csv")
 
 #Merge original with new genomad variants
 merged_df_2 <- left_join(concatenated_df, Scores, by = "GRCh37")
@@ -64,7 +64,7 @@ names(merged_df_3) <- sub("\\.x$", "", names(merged_df_3))
 colnames(merged_df_3)
 
 #Write the new updated file to WD. 
-write.csv(merged_df_3, "../../Scores.csv", row.names = FALSE)
+#write.csv(merged_df_3, "../../Scores.csv", row.names = FALSE)
 #Note that the genomic coordinates had to be manually entered in excel. Yep. Excel! also deleted 2x duplicate rows
 
 #FECH UROD####
@@ -124,18 +124,20 @@ duplicate_values <- concatenated_df$HGVS_protein[duplicated(concatenated_df$HGVS
 # Print duplicate values for review
 print(duplicate_values)
 
-# Rename the old Scores file before overwriting
-#file.rename("../../Scores.csv", "../../Scores_old_11072023.csv")
+#Rename the old Scores file before overwriting
+file.rename("../../Scores.csv", "../../Scores_old_13032025.csv")
 
-# Merge old and new variants by GRCh37 position
+#Merge old and new variants by GRCh37 position
 merged_df_2 <- left_join(concatenated_df, Scores, by = "GRCh37")
 
-# Remove unwanted columns ending in ".y"
+#Remove unwanted columns ending in ".y"
 merged_df_3 <- select(merged_df_2, -ends_with(".y"))
 
-# Rename columns by removing ".x" suffixes
+#Rename columns by removing ".x" suffixes
 names(merged_df_3) <- sub("\\.x$", "", names(merged_df_3))
 
+#Note that the genomic will now have to be manually entered in EXCEL! also deleted 2x duplicate rows
+
 # Write updated Scores file
-#write.csv(merged_df_3, "../../Scores.csv", row.names = FALSE)
+write.csv(merged_df_3, "../../Scores_FECH_UROD.csv", row.names = FALSE)
 
