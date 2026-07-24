@@ -19,6 +19,15 @@ server <- function(input, output, session) {
         pageLength = 25,
         scrollX = TRUE
       )
-    )
+    ) |>
+      DT::formatStyle(
+        "Consensus_Score",
+        backgroundColor = DT::styleInterval(
+          c(25, 50, 75),
+          c("#f1f5f9", "#dbeafe", "#93c5fd", "#2563eb")
+        ),
+        color = DT::styleInterval(75, c("#1f2937", "#ffffff")),
+        fontWeight = DT::styleInterval(75, c("normal", "bold"))
+      )
   }, server = TRUE)
 }
