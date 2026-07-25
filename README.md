@@ -24,3 +24,10 @@ shiny::runApp()
 
 The deployed application is available at
 <https://porphyria.shinyapps.io/PorphyriaDB_2/>.
+
+## Development
+
+App presentation and behaviour are maintained in `server.R` and `ui.R`.
+Database curation, consensus-score generation, and analysis are maintained
+separately under [`database/`](database/README.md). Use separate branches for
+app changes and database changes so each can be reviewed independently.
