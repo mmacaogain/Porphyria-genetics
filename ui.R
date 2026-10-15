@@ -8,15 +8,31 @@ ui <- fluidPage(
     style = paste(
       "display: flex;",
       "align-items: center;",
-      "gap: 0.75rem;",
+      "justify-content: space-between;",
+      "gap: 1rem;",
+      "flex-wrap: wrap;",
       "margin-bottom: 1rem;"
     ),
-    actionButton(
-      "toggle_extended_predictors",
-      "Extended predictor list",
-      `aria-controls` = "mytable"
+    tags$div(
+      style = paste(
+        "display: flex;",
+        "align-items: center;",
+        "gap: 0.75rem;",
+        "flex-wrap: wrap;"
+      ),
+      actionButton(
+        "toggle_extended_predictors",
+        "Extended predictor list",
+        `aria-controls` = "mytable"
+      ),
+      tags$span("PAS incorporates all available predictors.")
     ),
-    tags$span("PAS incorporates all available predictors.")
+    downloadButton(
+      "download_dataset",
+      "Download dataset (CSV)",
+      icon = icon("download"),
+      title = "Download the complete PorphyriaDB variant predictor dataset"
+    )
   ),
   tags$div(
     role = "region",
