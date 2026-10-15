@@ -9,6 +9,20 @@ porphyria_data <- read.csv(
   check.names = FALSE
 )
 
+dataset_download_filename <- "PorphyriaDB_variant_predictor_scores_v1.csv"
+
+write_download_dataset <- function(destination) {
+  copied <- file.copy(
+    "Scores_FECH_UROD.csv",
+    destination,
+    overwrite = TRUE
+  )
+
+  if (!copied) {
+    stop("The PorphyriaDB dataset could not be prepared for download.")
+  }
+}
+
 display_columns <- c(
   "Gene",
   "GRCh37",
@@ -85,6 +99,12 @@ threshold_background <- function(threshold, high_is_damaging) {
 }
 
 server <- function(input, output, session) {
+  output$download_dataset <- downloadHandler(
+    filename = function() dataset_download_filename,
+    contentType = "text/csv",
+    content = write_download_dataset
+  )
+
   output$mytable <- DT::renderDT({
     table <- DT::datatable(
       porphyria_display,
